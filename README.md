@@ -5,9 +5,9 @@ Copyright (c) 2024, ECOLS - All rights reserved.
 
 ## Version 1.0
 
-The student **Anuraag Raj** wrote the code for **BERT vs. Autoencoder in Analyzing Depression from Text Data**, with **Dr. Anuraganand** contributing by writing the code in MATLAB. The code was written in **Python** and **MATLAB**.
+The student **Anuraag Raj** wrote the code for **Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Depression Detection on Social Media**, with **Dr. Anuraganand** contributing by writing the code in MATLAB. The code was written in **Python** and **MATLAB**.
 
-**Paper**: *Depression Detection using BERT on Social Media Platforms*. Paper submitted at the **IEEE Transactions on Artificial Intelligence**.  
+**Paper**: *Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Depression Detection on Social Media*. Paper submitted at the **IEEE Transactions on Artificial Intelligence**.  
 **Authors**: Anuraag Raj and Anuraganand Sharma.
 
 ## Overview
