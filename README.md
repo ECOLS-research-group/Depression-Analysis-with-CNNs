@@ -89,7 +89,7 @@ This project uses the following datasets:
 
 ## Acknowledgments
 
-This project is built upon the work of researchers and developers in the fields of NLP and deep learning, particularly those who developed BERT and autoencoders.
+This project is built upon the work of researchers and developers in the fields of NLP and deep learning, particularly those who developed CNNs and transformer models.
 
 ## Programmer
 
