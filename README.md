@@ -94,6 +94,8 @@ To run the code in Google Colab:
 This project uses the following datasets:
 - **`depression_dataset_reddit_cleaned.csv`**: Original dataset retrieved from Kaggle.
 - **`merged_tensors_with_labels.csv`**: Encoded data using BERT.
+- **Images**: Located in the `data/AlgX3_64x64_merged_tensors_with_labels/` directory. The images are organized into `0/` and `1/` folders, representing different classes for the histogram approach.
+
 
 ## Acknowledgments
 
