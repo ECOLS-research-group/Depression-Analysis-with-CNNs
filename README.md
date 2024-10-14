@@ -61,9 +61,14 @@ To run the code in this repository, ensure that you have the following Python pa
 1. Prepare your dataset and place it in the `data/` directory. The dataset should include:
     - `depression_dataset_reddit_cleaned.csv`: Original data retrieved from Kaggle.
     - `merged_tensors_with_labels.csv`: Encoded data using BERT.
-2. Run the training script located in the `py/` directory:
+2. Run the training scripts located in the `py/` directory:
     ```bash
-    python py/bert_v_autoencoder.py
+    python py/bargraph_cnn_1d.py
+    python py/bargraph_cnn_2d.py
+    python py/histogram_cnn_1d.py
+    python py/histogram_cnn_2d.py
+    python py/heatmap_cnn_1d.py
+    python py/heatmap_cnn_2d.py
     ```
 
 ## Google Colab Integration
