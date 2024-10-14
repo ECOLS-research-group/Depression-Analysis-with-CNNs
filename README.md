@@ -45,7 +45,7 @@ To run the code in this repository, ensure that you have the following Python pa
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/anuraag165/Depression_BERT_Autoencoder](https://github.com/ECOLS-research-group/Depression-Analysis-with-CNNs).git
+    git clone https://github.com/ECOLS-research-group/Depression-Analysis-with-CNNs.git
     ```
 2. Navigate to the project directory:
     ```bash
