@@ -61,6 +61,9 @@ To run the code in this repository, ensure that you have the following Python pa
 1. Prepare your dataset and place it in the `data/` directory. The dataset should include:
     - `depression_dataset_reddit_cleaned.csv`: Original data retrieved from Kaggle.
     - `merged_tensors_with_labels.csv`: Encoded data using BERT.
+    - Images located in `data/AlgX3_64x64_merged_tensors_with_labels/` that utilize a histogram approach, organized into `0/` and `1/` folders.
+    - The `data/bargraphs/` utilize a bar graph approach, organized into `0/` and `1/` folders.
+    - The `data/heatmaps/` utilize a heatmap approach, organized into `0/` and `1/` folders.
 2. Run the training scripts located in the `py/` directory:
     ```bash
     python py/bargraph_cnn_1d.py
