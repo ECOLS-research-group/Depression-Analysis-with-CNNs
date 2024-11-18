@@ -139,7 +139,7 @@ To run the code in Google Colab:
 
 This project is built upon the work of researchers and developers in the fields of NLP and deep learning, particularly those who developed CNNs and transformer models.
 
-## Programmer
+## Programmers
 
 - Anuraag Raj
 - Anuraganand Sharma
