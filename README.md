@@ -76,9 +76,39 @@ Run the `CNNs.ipynb` file to:
 
 ### Step 3: GSGD Optimization
 
-Run the `GSGD_updated.ipynb` file to:
-- Optimize classification tasks using the GSGD algorithm.
-- Evaluate the performance on transformed images, leveraging advanced optimization techniques.
+Run the `GSGD.ipynb` file to:
+
+- **Optimize classification tasks** using the **GSGD (Guided Stochastic Gradient Descent)** algorithm.
+- **Setup**:
+  - Initialize the **CNN model** and **GSGD optimizer**.
+  - Load the transformed images (heatmaps, bar graphs, etc.).
+  - Set the **learning rate (lr)**, **neighborhood size (rho)**, and **batch size**.
+- **Training and Evaluation**:
+  - Train the model using GSGD and evaluate its performance.
+  - The script automatically adjusts weights based on consistent batches detected during training.
+
+### Files in the GSGD Setup:
+
+- **`model.py`**: Defines the CNN architecture and the GSGD optimizer.
+- **`train.py`**: Contains functions to train and test the model.
+- **`GSGD.ipynb`**: Loads the dataset, initializes the model, and runs training with GSGD.
+
+### Parameters:
+
+- **Major**:
+  - `lr`: Learning rate for GSGD.
+  - `rho`: Neighborhood size for consistent batches.
+  - `batch_size`: Size of the batches for training.
+
+- **Minor**:
+  - `revisit_batch_num`: Number of consistent batches to revisit during weight updates.
+  - `verification_set_num`: Small dummy validation set for batch consistency check.
+
+### Setup:
+
+1. Install dependencies:
+   ```bash
+   pip install torch torchvision
 
 ### Step 4: SVM vs. Random Forest
 
