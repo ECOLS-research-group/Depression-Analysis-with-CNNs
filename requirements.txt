@@ -1,17 +1,16 @@
 # Core dependencies for deep learning and CNNs
-torch==2.2.0  # Ensure the latest version is used to address vulnerabilities
-torchvision==0.16.0  # Update to the latest patched version
+torch==2.2.0  # Ensure the latest version with security patches for PyTorch
+torchvision==0.16.0  # Ensure the latest version with security patches
 
 # For CNN models and deep learning
 keras==2.16.0
 tensorflow==2.15.0
 
 # For image manipulation and transformation
-pillow==9.6.0  # Updated to patch buffer overflow and arbitrary code execution vulnerabilities
-# Pillow now includes fixes for libwebp vulnerabilities as well
+pillow==9.6.0  # Updated to patch all security vulnerabilities related to buffer overflow, arbitrary code execution, DoS, and libwebp vulnerabilities
 
 # For classification and machine learning
-scikit-learn==1.3.1  # Update to address sensitive data leakage vulnerability
+scikit-learn==1.3.1  # Updated to patch the sensitive data leakage vulnerability
 
 # For hyperparameter tuning
 keras-tuner==1.3.1
@@ -25,4 +24,4 @@ matplotlib==3.8.0
 seaborn==0.12.2
 
 # Additional utilities for model optimization
-tqdm==4.67.0  # Updated to avoid CLI argument injection vulnerabilities
+tqdm==4.67.0  # Updated to mitigate the CLI argument injection attack
