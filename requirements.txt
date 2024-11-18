@@ -1,13 +1,13 @@
 # Core dependencies for deep learning and CNNs
-torch==2.1.0
-torchvision==0.15.0
+torch==2.2.0  # Updated version
+torchvision==0.16.0  # Updated version
 
 # For CNN models and deep learning
 keras==2.16.0
 tensorflow==2.15.0
 
 # For image manipulation and transformation
-pillow==9.5.0
+pillow==9.6.0  # Updated version (check for patches)
 
 # For classification and machine learning
 scikit-learn==1.3.0
