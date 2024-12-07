@@ -2,6 +2,8 @@
 
 This repository contains Python implementations for analyzing depression from social media text data using traditional, hybrid, and new deep learning approaches. It includes methods for encoding text, transforming data into visual representations, and classifying data using CNNs, BERT, LSTMs, and other algorithms.
 
+Copyright (c) 2024, ECOLS - All rights reserved.
+
 ---
 
 ## Version 1.0
