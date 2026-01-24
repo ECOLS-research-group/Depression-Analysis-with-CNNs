@@ -8,9 +8,9 @@ Copyright (c) 2024, ECOLS - All rights reserved.
 
 ## Version 1.0
 
-The student **Anuraag Raj** wrote the code for **Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Depression Detection on Social Media**, with contributions from **Dr. Anuraganand Sharma**. The code was written entirely in **Python**.
+The student **Anuraag Raj** wrote the code for **Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Detecting Depression on Social Media**, with contributions from **Dr. Anuraganand Sharma**. The code was written entirely in **Python**.
 
-**Paper**: *Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Depression Detection on Social Media*. Paper submitted to the **IEEE Transactions on Artificial Intelligence**.  
+**Paper**: *Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Detecting Depression on Social Media*. Paper submitted to the **IEEE Transactions on Artificial Intelligence**.  
 **Authors**: Anuraag Raj and Anuraganand Sharma.
 
 ---
@@ -169,4 +169,4 @@ This project builds upon work in NLP and deep learning, particularly in text and
 ## Contributors
 
 - **Anuraag Raj** (Primary Developer)
-- **Dr. Anuraganand Sharma** (Research Supervisor)
+- **Associate Prof. Anuraganand Sharma** (Research Supervisor)
