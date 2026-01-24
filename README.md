@@ -10,13 +10,13 @@ This repository contains the complete implementation of the research work:
 
 > **Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Detecting Depression on Social Media**
 
-The study focuses on detecting depression from social media text using:
+The study investigates depression detection from social media text using:
 
 * **Traditional machine learning models** (LSTM, SVM, RF, 1D CNN)
 * **Hybrid models** (BERT combined with classical and neural classifiers)
 * **Image-based deep learning models** (2D CNN, Vision Transformer)
 
-A novel contribution of this work is the **conversion of BERT embedding vectors into image representations** (heatmaps, bar graphs, and histogram-like matrices), enabling the application of **2D CNNs and Vision Transformers** for classification.
+A key contribution of this work is the **transformation of BERT embedding vectors into image representations** (heatmaps, bar graphs, and histograms), enabling the application of **2D CNNs and Vision Transformers** for depression classification.
 
 ---
 
@@ -24,7 +24,7 @@ A novel contribution of this work is the **conversion of BERT embedding vectors 
 
 * **Anuraag Raj**
   *Primary Programmer & Research Developer*
-  Implemented all algorithms, preprocessing pipelines, transformation techniques, deep learning architectures, and experimental evaluations in Python.
+  Designed and implemented all algorithms, data preprocessing pipelines, embedding-to-image transformations, model architectures, and experimental evaluations in Python.
 
 * **Dr. Anuraganand Sharma**
   *Research Supervisor & Project Manager*
@@ -52,6 +52,7 @@ DEPRESSION-ANALYSIS-WITH-CNNS/
 │
 ├── data/
 │   ├── depression_dataset_reddit_cleaned.csv
+│   ├── Mental-Health-Twitter.csv
 │   ├── merged_tensors_with_labels.csv
 │   │
 │   ├── AlgX3_64x64_merged_tensors_with_labels/
@@ -67,7 +68,9 @@ DEPRESSION-ANALYSIS-WITH-CNNS/
 │       └── 1/
 │
 ├── deep_learning_models/
+│   ├── 2dcnn_tweets.ipynb
 │   ├── bert_only.ipynb
+│   ├── bert_tweets.ipynb
 │   ├── BERT_v_Autoencoder.ipynb
 │   ├── embedding_to_image_mapping.ipynb
 │   ├── GSGD_CNN.ipynb
@@ -77,6 +80,7 @@ DEPRESSION-ANALYSIS-WITH-CNNS/
 │
 ├── traditional_vs_hybrid_models/
 │   ├── traditional_text_models.ipynb
+│   ├── lstm_tweets.ipynb
 │   └── bert_hybrid_models.ipynb
 │
 ├── README.md
@@ -87,24 +91,30 @@ DEPRESSION-ANALYSIS-WITH-CNNS/
 
 ## 📊 Dataset Description
 
-### Files
+### Primary Dataset (Reddit)
 
 * **`depression_dataset_reddit_cleaned.csv`**
-  Preprocessed Reddit posts labeled as depressed (1) or non-depressed (0).
+  A cleaned and preprocessed dataset of Reddit posts labeled as depressed (1) or non-depressed (0).
 
 * **`merged_tensors_with_labels.csv`**
-  BERT-encoded sentence embeddings along with class labels.
+  BERT-encoded sentence embeddings of Reddit posts along with class labels.
+
+### Secondary Dataset (Twitter)
+
+* **`Mental-Health-Twitter.csv`**
+  A secondary dataset consisting of Twitter posts related to mental health.
+  This dataset is used **to analyze trends and evaluate the generalization behavior of trained models**, ensuring that the learned patterns are not restricted to a single social media platform.
 
 ---
 
 ## 🖼 Image Representation (Key Innovation)
 
-BERT embeddings are transformed into 2D image representations for CNN and Vision Transformer processing.
+BERT embedding vectors are transformed into 2D image representations for CNN and Vision Transformer processing.
 
 ### Transformation Types
 
-* **Heatmaps** – visualize embedding intensity distributions.  
-* **Bar graphs** – represent feature magnitudes.  
+* **Heatmaps** – visualize embedding intensity distributions.
+* **Bar graphs** – represent feature magnitudes.
 * **Histograms** – represent the frequency distribution of embedding values using the AlgX3 transformation method.
 
 ### Class-wise Organization
@@ -113,8 +123,8 @@ Images are stored in class-specific folders:
 
 ```
 Heatmaps_merged_tensors_with_labels/
-├── 0/  (non-depressed)
-└── 1/  (depressed)
+├── 0/  (non-depressed class)
+└── 1/  (depressed class)
 ```
 
 This structure enables direct loading using standard image-based deep learning pipelines.
@@ -149,15 +159,17 @@ These models combine semantic embeddings with classical classifiers.
 
 ---
 
-### 3. New Deep Learning Models
+### 3. Deep Learning Models
 
 Located in: `deep_learning_models/`
 
 * **bert_only.ipynb** – Pure BERT-based classification
+* **bert_tweets.ipynb** – BERT-based classification on Twitter dataset
 * **BERT_v_Autoencoder.ipynb** – Comparison of BERT and autoencoder representations
 * **embedding_to_image_mapping.ipynb** – Converts embedding vectors into images
 * **GSGD_CNN.ipynb** – 2D CNN optimized using Guided Stochastic Gradient Descent (GSGD)
 * **ViT.ipynb** – Vision Transformer-based classification
+* **2dcnn_tweets.ipynb** – CNN-based classification on Twitter-derived images
 
 ---
 
@@ -207,7 +219,7 @@ Run:
 deep_learning_models/embedding_to_image_mapping.ipynb
 ```
 
-This converts BERT vectors into heatmaps, bar graphs, and AlgX3 images and saves them under `data/`.
+This converts BERT vectors into heatmaps, bar graphs, and histogram images and saves them under `data/`.
 
 ---
 
@@ -239,6 +251,7 @@ Run any of the following:
 * `ViT.ipynb`
 * `bert_only.ipynb`
 * `BERT_v_Autoencoder.ipynb`
+* `2dcnn_tweets.ipynb`
 
 ---
 
@@ -280,4 +293,4 @@ This work builds upon advances in:
 
 ---
 
-✨ *This repository accompanies an accepted IEEE Access publication and serves as a reproducible research framework for depression detection from social media.*
+✨ *This repository accompanies an accepted IEEE Access publication and
