@@ -293,4 +293,4 @@ This work builds upon advances in:
 
 ---
 
-✨ *This repository accompanies an accepted IEEE Access publication and
+✨ *This repository accompanies an accepted IEEE Access publication and serves as a reproducible research framework for depression detection from social media.*
