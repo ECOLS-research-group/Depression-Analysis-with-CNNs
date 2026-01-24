@@ -1,172 +1,283 @@
-# Depression-Analysis-with-CNNs
+# 🧠 Depression Analysis with CNNs
 
-This repository contains Python implementations for analyzing depression from social media text data using traditional, hybrid, and new deep learning approaches. It includes methods for encoding text, transforming data into visual representations, and classifying data using CNNs, BERT, LSTMs, and other algorithms.
-
-Copyright (c) 2026, ECOLS - All rights reserved.
+**Revealing Hidden Pain: A Comparative Study of Traditional, Hybrid, and Deep Learning Models for Depression Detection on Social Media**
 
 ---
 
-## Version 1.0
+## 📌 Project Overview
 
-The student **Anuraag Raj** wrote the code for **Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Detecting Depression on Social Media**, with contributions from **Dr. Anuraganand Sharma**. The code was written entirely in **Python**.
+This repository contains the complete implementation of the research work:
 
-**Paper**: *Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Detecting Depression on Social Media*. Paper submitted to the **IEEE Transactions on Artificial Intelligence**.  
-**Authors**: Anuraag Raj and Anuraganand Sharma.
+> **Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Detecting Depression on Social Media**
 
----
+The study focuses on detecting depression from social media text using:
 
-## Folder Structure
+* **Traditional machine learning models** (LSTM, SVM, RF, 1D CNN)
+* **Hybrid models** (BERT combined with classical and neural classifiers)
+* **Image-based deep learning models** (2D CNN, Vision Transformer)
 
-The repository is structured into the following folders:
-
-### **1. Data**
-
-Contains the dataset files and image transformations used for classification tasks:
-- **Files**:
-  - `depression_dataset_reddit_cleaned.csv`: Preprocessed dataset of social media posts.
-  - `merged_tensors_with_labels.csv`: Encoded vectors using BERT.
-- **Subfolders**:
-  - `AlgX3_64x64_merged_tensors_with_labels`: Contains AlgX3-transformed images (64x64).
-  - `Bargraphs_merged_tensors_with_labels`: Contains bar graph images.
-  - `Heatmaps_merged_tensors_with_labels`: Contains heatmap images.
-
-### **2. Traditional Approaches**
-
-Contains implementations of traditional approaches for depression detection:
-- **File**: 
-  - `Depression_Detection_from_Text_Using_LSTM,_SVM,_RF,_and_1D_CNN.ipynb`: Implements LSTM, SVM, RF, and 1D CNN models for classification tasks.
-
-### **3. Hybrid Approaches**
-
-Contains implementations combining BERT with other models:
-- **File**:
-  - `BERT_Encoding_Using_LSTM,_SVM,_RF,_and_1D_CNN.ipynb`: Combines BERT embeddings with LSTM, SVM, RF, and 1D CNN models.
-
-### **4. New Approaches**
-
-Contains implementations of advanced deep learning techniques:
-- **Subfolder**: `image_transformation`
-  - **File**: `Data_Transformation.ipynb`: Transforms encoded data into visual representations (heatmaps, bar graphs, and histograms).
-- **Files**:
-  - `bert_only.ipynb`: Implements classification using only BERT embeddings.
-  - `BERT_v_Autoencoder.ipynb`: Compares BERT-based models with autoencoders.
-  - `GSGD_CNN.ipynb`: Uses Guided Stochastic Gradient Descent (GSGD) to optimize 2D CNN models for image-based classification.
-  - `model.py`: Defines CNN architecture.
-  - `train.py`: Contains training functions.
-  - `ViT.ipynb`: Implements Vision Transformers for depression detection tasks.
+A novel contribution of this work is the **conversion of BERT embedding vectors into image representations** (heatmaps, bar graphs, and histogram-like matrices), enabling the application of **2D CNNs and Vision Transformers** for classification.
 
 ---
 
-## Key Features
+## 👨‍💻 Authors & Roles
 
-- **Image Transformation Techniques**:
-  - Transform encoded vectors into images such as heatmaps, bar graphs, and histograms.
-  - Organized into respective folders under the `data` directory.
+* **Anuraag Raj**
+  *Primary Programmer & Research Developer*
+  Implemented all algorithms, preprocessing pipelines, transformation techniques, deep learning architectures, and experimental evaluations in Python.
 
-- **Traditional Approaches**:
-  - Implements models like LSTM, SVM, RF, and 1D CNN for textual data.
-
-- **Hybrid Approaches**:
-  - Combines BERT embeddings with models such as LSTM and CNNs for enhanced performance.
-
-- **New Approaches**:
-  - Advanced models like Vision Transformers (ViT) and GSGD-optimized 2D CNNs.
-  - **GSGD**: A novel optimization algorithm tailored for 2D CNN-based classification tasks.
+* **Dr. Anuraganand Sharma**
+  *Research Supervisor & Project Manager*
+  Supervised the research methodology, guided experimental design, validated results, and managed the overall research project.
 
 ---
 
-## Requirements
+## 📄 Publication Information
 
-Ensure you have the following Python packages installed:
-- **Python 3.x**
-- **TensorFlow**
-- **Keras**
-- **NumPy**
-- **Pandas**
-- **Matplotlib**
-- **Seaborn**
-- **Scikit-learn**
+**Paper Title:**
+*Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Detecting Depression on Social Media*
 
----
+**Journal:**
+**IEEE Access (Accepted)**
 
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/ECOLS-research-group/Depression-Analysis-with-CNNs.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd Depression-Analysis-with-CNNs
-    ```
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+**Authors:**
+Anuraag Raj, Anuraganand Sharma
 
 ---
 
-## Usage
+## 📁 Repository Structure
 
-### Step 1: Data Transformation
-
-Run the `Data_Transformation.ipynb` file in the `new_approaches/image_transformation` folder to:
-- Generate heatmaps, bar graphs, and histograms from encoded data (`merged_tensors_with_labels.csv`).
-- Transformed images are saved in organized folders under `data`.
-
-### Step 2: Traditional Approaches
-
-Run the `Depression_Detection_from_Text_Using_LSTM,_SVM,_RF,_and_1D_CNN.ipynb` file to:
-- Train traditional models such as LSTM, SVM, RF, and 1D CNN using textual data.
-
-### Step 3: Hybrid Approaches
-
-Run the `BERT_Encoding_Using_LSTM,_SVM,_RF,_and_1D_CNN.ipynb` file to:
-- Train hybrid models combining BERT embeddings with traditional classifiers.
-
-### Step 4: New Approaches
-
-Run the respective files in the `new_approaches` folder:
-- `GSGD_CNN.ipynb`: Train and optimize a 2D CNN using the GSGD algorithm on transformed image data.
-- `bert_only.ipynb`: Train BERT-based models for classification.
-- `BERT_v_Autoencoder.ipynb`: Compare BERT and autoencoder-based models.
-- `ViT.ipynb`: Train Vision Transformers for depression detection.
-
----
-
-## Parameters for GSGD
-
-GSGD (Guided Stochastic Gradient Descent) is used for optimizing 2D CNNs:
-- **Major**:
-  - `lr`: Learning rate.
-  - `rho`: Neighborhood size for consistent batches.
-  - `batch_size`: Batch size during training.
-- **Minor**:
-  - `revisit_batch_num`: Consistent batches revisited during weight updates.
-  - `verification_set_num`: Validation set for batch consistency checks.
-
----
-
-## Google Colab Integration
-
-To run the code in Google Colab:
-1. Upload required files (`depression_dataset_reddit_cleaned.csv` and `merged_tensors_with_labels.csv`) to the Colab environment.
-2. Open any `.ipynb` file in Colab.
-3. Install required libraries:
-    ```bash
-    !pip install tensorflow keras pandas matplotlib seaborn scikit-learn
-    ```
-4. Execute the cells step-by-step to preprocess data, train models, and evaluate performance.
+```
+DEPRESSION-ANALYSIS-WITH-CNNS/
+│
+├── data/
+│   ├── depression_dataset_reddit_cleaned.csv
+│   ├── merged_tensors_with_labels.csv
+│   │
+│   ├── AlgX3_64x64_merged_tensors_with_labels/
+│   │   ├── 0/   (non-depressed class images)
+│   │   └── 1/   (depressed class images)
+│   │
+│   ├── Bargraphs_merged_tensors_with_labels/
+│   │   ├── 0/
+│   │   └── 1/
+│   │
+│   └── Heatmaps_merged_tensors_with_labels/
+│       ├── 0/
+│       └── 1/
+│
+├── deep_learning_models/
+│   ├── bert_only.ipynb
+│   ├── BERT_v_Autoencoder.ipynb
+│   ├── embedding_to_image_mapping.ipynb
+│   ├── GSGD_CNN.ipynb
+│   ├── ViT.ipynb
+│   ├── model.py
+│   └── train.py
+│
+├── traditional_vs_hybrid_models/
+│   ├── traditional_text_models.ipynb
+│   └── bert_hybrid_models.ipynb
+│
+├── README.md
+└── requirements.txt
+```
 
 ---
 
-## Acknowledgments
+## 📊 Dataset Description
 
-This project builds upon work in NLP and deep learning, particularly in text and image-based classification tasks.
+### Files
+
+* **`depression_dataset_reddit_cleaned.csv`**
+  Preprocessed Reddit posts labeled as depressed (1) or non-depressed (0).
+
+* **`merged_tensors_with_labels.csv`**
+  BERT-encoded sentence embeddings along with class labels.
 
 ---
 
-## Contributors
+## 🖼 Image Representation (Key Innovation)
 
-- **Anuraag Raj** (Primary Developer)
-- **Associate Prof. Anuraganand Sharma** (Research Supervisor)
+BERT embeddings are transformed into 2D image representations for CNN and Vision Transformer processing.
+
+### Transformation Types
+
+* **Heatmaps** – visualize embedding intensity distributions.
+* **Bar graphs** – represent feature magnitudes.
+* **AlgX3 64×64 matrices** – structured reshaping of vectors into spatial grids.
+
+### Class-wise Organization
+
+Images are stored in class-specific folders:
+
+```
+Heatmaps_merged_tensors_with_labels/
+├── 0/  (non-depressed)
+└── 1/  (depressed)
+```
+
+This structure enables direct loading using standard image-based deep learning pipelines.
+
+---
+
+## 🧠 Model Categories
+
+### 1. Traditional Models
+
+Located in: `traditional_vs_hybrid_models/traditional_text_models.ipynb`
+
+* LSTM
+* Support Vector Machine (SVM)
+* Random Forest (RF)
+* 1D CNN
+
+These models operate directly on textual or vectorized features.
+
+---
+
+### 2. Hybrid Models
+
+Located in: `traditional_vs_hybrid_models/bert_hybrid_models.ipynb`
+
+* BERT + LSTM
+* BERT + SVM
+* BERT + RF
+* BERT + 1D CNN
+
+These models combine semantic embeddings with classical classifiers.
+
+---
+
+### 3. New Deep Learning Models
+
+Located in: `deep_learning_models/`
+
+* **bert_only.ipynb** – Pure BERT-based classification
+* **BERT_v_Autoencoder.ipynb** – Comparison of BERT and autoencoder representations
+* **embedding_to_image_mapping.ipynb** – Converts embedding vectors into images
+* **GSGD_CNN.ipynb** – 2D CNN optimized using Guided Stochastic Gradient Descent (GSGD)
+* **ViT.ipynb** – Vision Transformer-based classification
+
+---
+
+## ⚙️ GSGD Optimization Parameters
+
+Guided Stochastic Gradient Descent (GSGD) is used for optimizing 2D CNN training:
+
+**Major Parameters:**
+
+* `lr` – Learning rate
+* `rho` – Neighborhood size for batch consistency
+* `batch_size` – Training batch size
+
+**Minor Parameters:**
+
+* `revisit_batch_num` – Number of revisited consistent batches
+* `verification_set_num` – Validation set for batch consistency
+
+---
+
+## 📦 Requirements
+
+* Python 3.x
+* TensorFlow
+* Keras
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+Install using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Usage Workflow
+
+### Step 1: Vector-to-Image Transformation
+
+Run:
+
+```
+deep_learning_models/embedding_to_image_mapping.ipynb
+```
+
+This converts BERT vectors into heatmaps, bar graphs, and AlgX3 images and saves them under `data/`.
+
+---
+
+### Step 2: Traditional Models
+
+Run:
+
+```
+traditional_vs_hybrid_models/traditional_text_models.ipynb
+```
+
+---
+
+### Step 3: Hybrid Models
+
+Run:
+
+```
+traditional_vs_hybrid_models/bert_hybrid_models.ipynb
+```
+
+---
+
+### Step 4: Deep Learning Models
+
+Run any of the following:
+
+* `GSGD_CNN.ipynb`
+* `ViT.ipynb`
+* `bert_only.ipynb`
+* `BERT_v_Autoencoder.ipynb`
+
+---
+
+## ☁️ Google Colab Support
+
+1. Upload required CSV files to Colab.
+2. Open the desired `.ipynb` file.
+3. Install dependencies:
+
+```bash
+!pip install -r requirements.txt
+```
+
+4. Execute cells sequentially.
+
+---
+
+## 📜 License & Copyright
+
+Copyright © 2026
+**ECOLS Research Group – All Rights Reserved**
+
+---
+
+## 🙏 Acknowledgments
+
+This work builds upon advances in:
+
+* Natural Language Processing (NLP)
+* Deep Learning
+* Vision-based representation learning
+
+---
+
+## 👥 Contributors
+
+* **Anuraag Raj** – Programmer & Research Developer
+* **Dr. Anuraganand Sharma** – Supervisor & Project Manager
+
+---
+
+✨ *This repository accompanies an accepted IEEE Access publication and serves as a reproducible research framework for depression detection from social media.*
