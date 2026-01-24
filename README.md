@@ -103,9 +103,9 @@ BERT embeddings are transformed into 2D image representations for CNN and Vision
 
 ### Transformation Types
 
-* **Heatmaps** – visualize embedding intensity distributions.
-* **Bar graphs** – represent feature magnitudes.
-* **AlgX3 64×64 matrices** – structured reshaping of vectors into spatial grids.
+* **Heatmaps** – visualize embedding intensity distributions.  
+* **Bar graphs** – represent feature magnitudes.  
+* **Histograms** – represent the frequency distribution of embedding values using the AlgX3 transformation method.
 
 ### Class-wise Organization
 
