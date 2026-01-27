@@ -1,4 +1,4 @@
-torch==2.4.1
+torch==2.8.0
 torchvision==0.25.0
 tensorflow==2.20.0
 keras==3.13.1
