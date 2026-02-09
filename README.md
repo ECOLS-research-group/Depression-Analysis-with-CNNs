@@ -38,7 +38,10 @@ A key contribution of this work is the **transformation of BERT embedding vector
 *Revealing Hidden Pain: A Comparative Analysis of Traditional vs. New Deep Learning Approaches for Detecting Depression on Social Media*
 
 **Journal:**
-**IEEE Access (Accepted)**
+IEEE Access
+
+**Publication Link:**
+https://ieeexplore.ieee.org/document/11366856
 
 **Authors:**
 Anuraag Raj, Anuraganand Sharma
@@ -293,4 +296,7 @@ This work builds upon advances in:
 
 ---
 
-✨ *This repository accompanies an accepted IEEE Access publication and serves as a reproducible research framework for depression detection from social media.*
+✨ This repository accompanies a published IEEE Access article and serves as a reproducible research framework for depression detection from social media.
+
+🔗 Official publication available at:
+https://ieeexplore.ieee.org/document/11366856
