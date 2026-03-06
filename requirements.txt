@@ -3,7 +3,7 @@ torchvision==0.25.0
 tensorflow==2.20.0
 keras==3.13.1
 keras-tuner==1.4.8
-pillow==12.1.0
+pillow==12.1.1
 scikit-learn==1.8.0
 pandas==3.0.0
 numpy==1.27.0
